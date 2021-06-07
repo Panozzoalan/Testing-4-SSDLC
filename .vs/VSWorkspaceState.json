@@ -4,8 +4,9 @@
     "\\app",
     "\\app\\assets",
     "\\app\\assets\\js",
-    "\\app\\data"
+    "\\app\\data",
+    "\\app\\views"
   ],
-  "SelectedNode": "\\app\\data\\allocations-dao.js",
+  "SelectedNode": "\\app\\views\\profile.html",
   "PreviewInSolutionExplorer": false
 }
