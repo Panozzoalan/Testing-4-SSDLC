@@ -1,4 +1,3 @@
-/// <reference types="Cypress" />
 
 describe('/tutorial behaviour', () => {
   it('Should have all the links in the side nav', () => {

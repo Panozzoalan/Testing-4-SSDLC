@@ -8,10 +8,8 @@ f<!DOCTYPE html>
 
     <title>Base4Sec SSDLC Test</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/bootstrap.css" rel="stylesheet">
 
-    <!-- Theme CSS -->
     <link href="vendor/theme/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/theme/font-awesome/css/font-awesome.min.css">
 
@@ -26,15 +24,11 @@ f<!DOCTYPE html>
 <body>
 
     <div id="wrapper">
-        <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
             </div>
-            <!--  Nav Links-->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <!-- top nav -->
                 <ul class="nav navbar-nav navbar-right navbar-user">
 
                     <li class="dropdown user-dropdown">
@@ -49,7 +43,6 @@ f<!DOCTYPE html>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </nav>
 
         <div id="page-wrapper">
@@ -57,7 +50,6 @@ f<!DOCTYPE html>
                 <div class="col-lg-12">
                 </div>
             </div>
-            <!-- /.row -->
 
             <div class="row">
                 <div class="col-lg-4"></div>
@@ -119,18 +111,12 @@ f<!DOCTYPE html>
                 </div>
                 <div class="col-lg-4"></div>
             </div>
-            <!-- /.row -->
 
         </div>
-        <!-- /#page-wrapper -->
-        <!-- /.row -->
     </div>
-    <!-- /#wrapper -->
 
-    <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery.min.js"></script>
     <script src="/vendor/bootstrap/bootstrap.js"></script>
-    <!-- Load environmental scripts such as live reload -->
     {% for script in environmentalScripts %}
     {{script}}
     {% endfor %}

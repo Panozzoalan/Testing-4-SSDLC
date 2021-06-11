@@ -1,4 +1,3 @@
-/// <reference types="Cypress" />
 
 describe('/memos behaviour', () => {
   before(() => {

@@ -4,16 +4,14 @@ const express = require("express");
 const favicon = require("serve-favicon");
 const bodyParser = require("body-parser");
 const session = require("express-session");
-// const csrf = require('csurf');
-const consolidate = require("consolidate"); // Templating library adapter for Express
+const consolidate = require("consolidate"); 
 const swig = require("swig");
-// const helmet = require("helmet");
-const MongoClient = require("mongodb").MongoClient; // Driver for connecting to MongoDB
+const MongoClient = require("mongodb").MongoClient; 
 const http = require("http");
 const marked = require("marked");
-const app = express(); // Web framework to handle routing requests
+const app = express();
 const routes = require("./app/routes");
-const { port, db, cookieSecret } = require("./config/config"); // Application config properties
+const { port, db, cookieSecret } = require("./config/config"); 
 
 
 MongoClient.connect(db, (err, db) => {

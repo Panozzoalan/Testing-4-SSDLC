@@ -206,7 +206,6 @@ test.describe(zapTargetAppRoute + " regression test suite", function() {
                                 if (err) zapError = (err.code === "ECONNREFUSED") ? err : "";
                                 zaproxy.core.numberOfAlerts(zapTargetAppAndRoute, function(err, resp) {
                                     if (resp) numberOfAlerts = resp.numberOfAlerts;
-                                    //else console.log(err);
                                     console.log(
                                         "Scan " +
                                         scanId +

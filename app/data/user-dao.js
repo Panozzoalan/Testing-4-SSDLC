@@ -13,7 +13,6 @@ function UserDAO(db) {
 
     this.addUser = (userName, firstName, lastName, password, email, callback) => {
 
-        // Create user document
         const user = {
             userName,
             firstName,
@@ -62,7 +61,6 @@ function UserDAO(db) {
                     callback(null, user);
                 } else {
                     const invalidPasswordError = new Error("Invalid password");
-                    // Set an extra field so we can distinguish this from a db error
                     invalidPasswordError.invalidPassword = true;
                     callback(invalidPasswordError, null);
                 }

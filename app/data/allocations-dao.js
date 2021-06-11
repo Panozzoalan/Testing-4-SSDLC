@@ -15,7 +15,6 @@ const AllocationsDAO = function(db){
     this.update = (userId, stocks, funds, bonds, callback) => {
         const parsedUserId = parseInt(userId);
 
-        // Create allocations document
         const allocations = {
             userId: userId,
             stocks: stocks,
@@ -37,7 +36,6 @@ const AllocationsDAO = function(db){
 
                     if (err) return callback(err, null);
 
-                    // add user details
                     allocations.userId = userId;
                     allocations.userName = user.userName;
                     allocations.firstName = user.firstName;
